@@ -19,7 +19,9 @@ $ hadoop fs -put /opt/new_dir/depart_data.csv /lln/
 
 # Load data from Docker Container into hive table
   Go to hive terminal -> select database
+  
   hive> use hive_db;
+  
   hive> load data local inpath '/opt/new_dir/depart_data.csv' into table department_data_01;
 
 
